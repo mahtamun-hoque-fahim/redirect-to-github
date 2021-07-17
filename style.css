@@ -82,16 +82,21 @@ font-size: 45px;
 }
 body > main > :nth-child(4)::after {
   content: " Github Profile";
-  background: linear-gradient(
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+    background-color: var(--navy);
+      background: linear-gradient(
     110deg,
     var(--light-blue) 5%,
     var(--dark-blue) 100%
   );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 700;
-}
+color:white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 @keyframes boom{
     from{
         content: "Boom !!!";
