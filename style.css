@@ -42,6 +42,7 @@ body > main > h1{
         var(--dark-blue) 100%
       );
       background-clip: text;
+   text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
  }
@@ -88,6 +89,7 @@ body > main > :nth-child(4)::after {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
   font-weight: 700;
 }
 @keyframes boom{
@@ -100,6 +102,7 @@ body > main > :nth-child(4)::after {
           );
           background-clip: text;
           -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
           font-weight: 700;
 
     }
@@ -112,6 +115,7 @@ body > main > :nth-child(4)::after {
           );
           background-clip: text;
           -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
           font-weight: 700;
     }
 
