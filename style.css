@@ -45,35 +45,31 @@ body > main > h1{
       -webkit-text-fill-color: transparent;
       font-weight: 700;
  }
-@keyframes change{
-    0%{
-        content: "Checking....";
-        font-size: 50px;
-    }
-    25%{
+ @keyframes change{
+  10%{
+      content: "Checking....";
+      font-size: 50px;
+  }
+  25%{
 content: "Checking your browser...";
 font-size: 45px;
-    }
-    50%{
-        content: "Checking secure internet connection...";
-        font-size: 35px;
-    }
-    60%{
-        content: "Checking...";
-        font-size: 40px;
-    }
-    75%{
-        content: "Checking certificate validity...";
-        font-size: 35px;
-    }
-    80%{
-        content: "Checking once again.";
-        font-size: 40px;
-    }
-    100%{
-        content: "Your ready to go !";
-        font-size: 50px;
-    }
+  }
+  50%{
+      content: "fetching github...";
+      font-size: 45px;
+  }
+  75%{
+      content: "fetching repos...";
+      font-size: 50px;
+  }
+  80%{
+      content: "Checking once again.";
+      font-size: 45px;
+  }
+  100%{
+      content: "Your ready to go !";
+      font-size: 50px;
+  }
 }
 @keyframes rotate {
     0% {
@@ -191,4 +187,52 @@ body > main > div.container > div.load{
           width: 30vw;
     }
     
-}
+
+  }
+  @media only screen and (max-width:600px){
+    body{
+      
+    }
+    body > main > p{
+      font-size: 20px;
+      font-weight: 400;
+    }
+    body > main > h1{
+      font-size: 20px;
+    }
+    body > main > h1::after{
+      animation: change 10s 1;
+
+    }
+    @keyframes change{
+      10%{
+          content: "Checking....";
+          font-size: 30px;
+      }
+      25%{
+  content: "Checking your browser...";
+  font-size: 25px;
+      }
+      50%{
+          content: "fetching github...";
+          font-size: 35px;
+      }
+      75%{
+          content: "fetching repos...";
+          font-size: 30px;
+      }
+      80%{
+          content: "Checking once again.";
+          font-size: 25px;
+      }
+      100%{
+          content: "Your ready to go !";
+          font-size: 30px;
+      }
+  }
+
+
+
+
+
+  }
