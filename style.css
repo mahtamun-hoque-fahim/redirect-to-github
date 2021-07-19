@@ -40,13 +40,10 @@ body > main > h1{
         110deg,
         var(--light-blue) 5%,
         var(--dark-blue) 100%
-      );  
+      );
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-   
-
-
       font-weight: 700;
  }
  @keyframes change{
@@ -85,10 +82,15 @@ font-size: 45px;
 }
 body > main > :nth-child(4)::after {
   content: " Github Profile";
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-     font-weight: 700;
+  background: linear-gradient(
+    110deg,
+    var(--light-blue) 5%,
+    var(--dark-blue) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 @keyframes boom{
     from{
@@ -98,9 +100,9 @@ body > main > :nth-child(4)::after {
             var(--light-blue) 5%,
             var(--dark-blue) 100%
           );
-         -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           font-weight: 700;
 
     }
@@ -111,9 +113,9 @@ body > main > :nth-child(4)::after {
             var(--light-blue) 5%,
             var(--dark-blue) 100%
           );
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           font-weight: 700;
     }
 
@@ -192,9 +194,7 @@ body > main > div.container > div.load{
 
   }
   @media only screen and (max-width:600px){
-    body{
-      
-    }
+    
     body > main > p{
       font-size: 20px;
       font-weight: 400;
